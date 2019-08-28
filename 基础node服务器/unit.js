@@ -1,4 +1,5 @@
 module.exports = {
+    // url地址解析，cf参数是指当主机时解析的参数
     urlParse:function (url, cf = {path:'index', ext:'.html'}) {
         let temp = url.split("?");;
         let urlObj = {};

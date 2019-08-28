@@ -3,8 +3,8 @@ const fs = require('fs');
 const unit = require('./unit');
 const cf = require('./config');
 
-let py = {};
-let wts = fs.createWriteStream('./log.txt');
+let py = {}; // Proxy代理页面
+let wts = fs.createWriteStream('./log.txt'); // 错误日志文件流
 // 错误信息捕获
 function err(func, res, msg){
     try {
